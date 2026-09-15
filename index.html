@@ -6,7 +6,7 @@
 <meta name="robots" content="noindex, nofollow">
 <title>김현규 · 무신사 상품등록 · 카페24 운영</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 
 :root{--paper:#f4f6f9;--white:#fff;--ink:#172c46;--text:#46556a;--muted:#6a7788;--line:#dfe5ed;--soft:#edf3fb;--accent:#d4e3ff;--blue:#245db7;--radius:18px}
@@ -31,6 +31,47 @@ footer{display:flex;justify-content:space-between;gap:20px;border-top:1px solid 
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @page{size:A4;margin:10mm}
 @media print{.hero-layout{align-items:end}.contact{border-radius:8px}.tagline{margin-top:8px}.card{padding:0}.step{padding:0 0 0 23px}.hero-intro{padding:0}.contact-kicker,.contact:before,.contact:after{display:none}.contact{display:block}.hero-line span{color:var(--ink)}.stat,.card,.step{background:white;border:0;box-shadow:none;border-radius:0}.stat{border-left:1px solid var(--line)}.stat:first-child{border-left:0}.stats{border-block:1px solid var(--line)}section{border-bottom:1px solid var(--line);margin-bottom:0}.sec-head{position:static;padding:0}.num{padding:0}.sec-head .line{display:none}.contact-link{background:transparent;color:white;border-radius:0;border-bottom:1px solid #5d6f85;margin-top:0}.contact-link span{color:#d4e3ff}.contact-heading{max-width:none;font-weight:400}.tag{background:#f0f3f7;border:0}.card+.card{border-top:1px dashed var(--line)}.step{position:relative}.idx{position:absolute;left:0;top:1px;margin:0}.note{border:0;border-left:3px solid #7d9bbb;border-radius:0}footer{border:0}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}body{background:white;line-height:1.5}.wrap{width:100%;max-width:none}.masthead,.skip-link{display:none}.hero{padding:0 0 15px}.hero-layout{grid-template-columns:minmax(0,1fr) 205px;gap:20px}.eyebrow{font-size:8px}h1{font-size:31px;letter-spacing:-1px;margin:8px 0 5px}.role{font-size:9px}.hero-line{font-size:18px;margin:12px 0 8px;line-height:1.4}.tagline{font-size:8.5px;line-height:1.65}.contact{padding:13px}.contact-heading{font-size:8px;margin-bottom:9px}.contact-link{font-size:12px;padding-bottom:9px;margin-bottom:9px}.contact-link span{font-size:14px}.contact-detail{font-size:8px;margin-top:5px}.stats{padding:13px 0;margin-bottom:0}.grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:0}.stat{padding:0 13px}.stat:nth-child(3){padding-left:13px;border-left:1px solid var(--line)}.n{font-size:23px}.l{font-size:8px;margin-top:3px}.stat small{font-size:6px;margin-top:3px}section{grid-template-columns:130px minmax(0,1fr);gap:17px;padding:15px 0;break-inside:avoid}.sec-head{display:block}.sec-head .num{font-size:8px;margin-bottom:6px}.sec-head h2{font-size:13px}.section-sub{font-size:8px;margin-top:5px}.card+.card{margin-top:10px;padding-top:10px}.card h3{font-size:9.5px}.meta{font-size:8px}.badge{font-size:7px;padding:2px 4px}.card p,.card li{font-size:8.5px;line-height:1.6}.card p{margin-top:5px}.card ul{gap:3px;margin-top:6px}.tags{margin-top:7px;gap:4px}.tag{font-size:7px;padding:2px 5px}.steps{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 15px}.step{padding-left:23px}.idx{font-size:8px;width:16px;height:16px}.step h3{font-size:9px}.step p{font-size:8px;line-height:1.6;margin-top:4px}.note{font-size:8.5px;padding:9px 10px;margin-top:12px}footer{padding:13px 0 0;font-size:8px}a{text-decoration:none}}
+
+
+/* Screen typography stays separate from the compact A4 layout. */
+@media screen {
+  :root{--text:#35465c;--muted:#56677c}
+  .brand{font-size:18px}.nav-contact{font-size:13px}
+  h1{font-size:25px;font-weight:700}.role{font-size:14px}
+  .hero-line{font-weight:800;letter-spacing:-1.7px;line-height:1.45}
+  .tagline{font-size:15px;line-height:1.95}.eyebrow{font-size:12px}
+  .l{font-size:14px;font-weight:600}.stat small{font-size:11px;line-height:1.7}
+  .sec-head h2{font-size:23px}.card h3{font-size:17px;font-weight:700}
+  .card p,.card li{font-size:14px;line-height:1.95}.meta{font-size:12px}
+  .tag{font-size:12px}.badge{font-size:11px}.section-sub{font-size:12px}
+  .step h3{font-size:16px;font-weight:600}.step p{font-size:14px;line-height:1.9}
+  .note{font-size:14px}.contact-detail{font-size:12px}.contact-link{font-size:16px}
+  footer{font-size:12px}
+}
+@media screen and (max-width:680px){
+  .brand{font-size:16px}.nav-contact{font-size:12px}.eyebrow{font-size:11px}
+  h1{font-size:23px}.role{font-size:12px}.hero-line{font-size:clamp(28px,7.8vw,38px);letter-spacing:-1.2px}
+  .tagline{font-size:14px}.l{font-size:12px}.stat small{font-size:10px}
+  .sec-head h2{font-size:21px}.card h3{font-size:16px}.meta{font-size:11px}
+  .badge{font-size:10px;margin-left:0}.card p,.card li{font-size:14px;line-height:1.85}
+  .tag{font-size:11px}.step h3{font-size:15px}.step p{font-size:13px}
+  .note{font-size:13px}.contact-detail{font-size:12px}footer{font-size:11px}
+}
+@keyframes intro-enter{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes card-enter{from{opacity:.45;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+@media screen and (prefers-reduced-motion:no-preference){
+  .hero-intro>*{animation:intro-enter .7s cubic-bezier(.22,1,.36,1) both}
+  .hero-intro .eyebrow{animation-delay:0s}.hero-intro h1{animation-delay:.08s}
+  .hero-intro .role{animation-delay:.16s}.hero-intro .hero-line{animation-delay:.24s}
+  .hero-intro .tagline{animation-delay:.34s}.contact{animation:intro-enter .85s .28s cubic-bezier(.22,1,.36,1) both}
+  .contact-link,.contact-link span{transition:transform .25s ease,background .25s ease,box-shadow .25s ease}
+  .contact-link:hover,.contact-link:focus-visible{transform:translateY(-2px);box-shadow:0 6px 20px #07152c30}
+  .contact-link:hover span,.contact-link:focus-visible span{transform:translate(3px,-3px)}
+  @supports(animation-timeline:view()){
+    .card,.step{animation:card-enter linear both;animation-timeline:view();animation-range:entry 0% entry 100%}
+  }
+}
+@media print{*{animation:none!important;transition:none!important;opacity:1!important;transform:none!important}}
 
 </style>
 </head>
@@ -133,5 +174,30 @@ footer{display:flex;justify-content:space-between;gap:20px;border-top:1px solid 
 </main>
 
 <footer class="wrap"><span>김현규 · 무신사 상품등록 · 카페24 운영</span><a href="mailto:sn0722@naver.com">sn0722@naver.com ↗</a></footer>
+
+<script>
+// Browsers without CSS view timelines get the same one-time entrance effect.
+(() => {
+  const motion = matchMedia('(prefers-reduced-motion: reduce)');
+  if (motion.matches || CSS.supports('animation-timeline', 'view()') || !('IntersectionObserver' in window)) return;
+  const running = new Set();
+  const observer = new IntersectionObserver(entries => {
+    for (const entry of entries) {
+      if (!entry.isIntersecting) continue;
+      observer.unobserve(entry.target);
+      const effect = entry.target.animate([
+        {opacity: .45, transform: 'translateY(24px)'},
+        {opacity: 1, transform: 'translateY(0)'}
+      ], {duration: 600, easing: 'cubic-bezier(.22,1,.36,1)'});
+      running.add(effect);
+      effect.finished.then(() => running.delete(effect), () => running.delete(effect));
+    }
+  }, {threshold: 0.08});
+  document.querySelectorAll('.card, .step').forEach(el => observer.observe(el));
+  const stop = () => {observer.disconnect();running.forEach(effect => effect.cancel());running.clear();};
+  motion.addEventListener('change', event => {if(event.matches) stop();});
+  window.addEventListener('beforeprint', stop);
+})();
+</script>
 </body>
 </html>
